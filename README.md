@@ -4,6 +4,5 @@
 
 /usr/local/bin/memory-hog.py -m 4000
 
-python3 /usr/local/bin/scalable-hogger.py -s 900
-
+/usr/local/bin/scalable-hogger.py -s 9000
 
