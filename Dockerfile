@@ -17,5 +17,8 @@ RUN chmod +x /usr/local/bin/cpu-hog.sh && \
     chmod +x /usr/local/bin/memory-hog.py && \
     chmod +x /usr/local/bin/scalable-hogger.py
 
-# Set the default command to bash
-CMD ["/bin/bash"]
+# Expose port 80
+EXPOSE 80
+
+# Set the default command to run the service
+CMD ["/usr/local/bin/scalable-hogger.py"]
